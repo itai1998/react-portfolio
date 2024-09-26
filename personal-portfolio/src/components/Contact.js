@@ -47,12 +47,12 @@ export const Contact = () => {
     e.preventDefault();
 
     const myEmail = 'smes93434@gmail.com';
-    const greeding = `Hi, my name is ${formDetails.firstName} ${formDetails.lastName}.`
-    const phone = `Here is my number: ${formDetails.phone}.`
-    const email = `Here is my email: ${formDetails.email}`
-    
+    const greeding = `Hi, my name is ${formDetails.firstName} ${formDetails.lastName}\n\n`
+    const phone = formDetails.phone !== '' ? `Here is my number: ${formDetails.phone}\n` : ''
+    const email = formDetails.email !== '' ?  `Here is my email: ${formDetails.email}\n` : ''
+     
     // Manually add the line breaks using double encoding
-    const bodyContent = `${greeding}\n\n${phone}\n${email}\n\n${formDetails.message}`;
+    const bodyContent = `${greeding}${phone}${email}\n${formDetails.message}`;
 
     // Construct the Gmail link with body content encoded
     const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${myEmail}&su=It's happy to connect with you&body=${encodeURIComponent(bodyContent)}`;
