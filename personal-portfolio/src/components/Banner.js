@@ -59,17 +59,11 @@ export const Banner = () => {
                 <h1>{`Hi! I'm I-Tai`} </h1> 
                 <h1><span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Software Engineer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>
-                    Hello, my name is I-Tai Lin, and I am a Software Engineer and Web Developer 
-                    in the Enterprise Information Systems (EIS) department at Brigham Young University-Hawaii. 
-                    I specialize in designing and developing applications using HTML, CSS, Java, and JavaScript,
-                     which are actively utilized across the university. 
-                    In addition to my current role, I have gained valuable experience as a React Developer 
-                    during my internship at FamilySearch and as a Mobile Developer at Alumni Relations.
-                  </p>
-                  <p>
-                    I am also passionate about exploring new technologies in my free time, 
-                    having worked on various exciting projects using programming languages 
-                    and frameworks such as React.js, Node.js, Python, MySQL, and REST API.
+                    Hi, I'm I-Tai Lin, a passionate Software Developer at Brigham Young University-Hawaii's Enterprise Information Systems (EIS) department, 
+                    Web Developer at FamilySearch, and Mobile Developer for Alminu Relationship. 
+                    With expertise in React, Java, and Node.js, I create dynamic applications that enhance user 
+                    experiences and drive functionality across diverse platforms, from academic systems to 
+                    family history research tools.
                   </p>
                   <button onClick={() => window.open('https://www.linkedin.com/in/i-tai-lin/', '_blank')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}

@@ -43,6 +43,23 @@ export const Contact = () => {
     }
   };
 
+  const openEmail = (e) => {
+    e.preventDefault();
+
+    const myEmail = 'smes93434@gmail.com';
+    const greeding = `Hi, my name is ${formDetails.firstName} ${formDetails.lastName}.`
+    const phone = `Here is my number: ${formDetails.phone}.`
+    const email = `Here is my email: ${formDetails.email}`
+    
+    // Manually add the line breaks using double encoding
+    const bodyContent = `${greeding}\n\n${phone}\n${email}\n\n${formDetails.message}`;
+
+    // Construct the Gmail link with body content encoded
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${myEmail}&su=It's happy to connect with you&body=${encodeURIComponent(bodyContent)}`;
+
+    window.open(gmailLink, '_blank');
+  }
+
   return (
     <section className="contact" id="connect">
       <Container>
@@ -59,7 +76,8 @@ export const Contact = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
-                <form onSubmit={handleSubmit}>
+                {/* <form onSubmit={handleSubmit}> */}
+                <form>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
                       <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
@@ -75,7 +93,8 @@ export const Contact = () => {
                     </Col>
                     <Col size={12} className="px-1">
                       <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button type="submit"><span>{buttonText}</span></button>
+                      {/* <button type="submit"><span>{buttonText}</span></button> */}
+                      <button type="submit" onClick={openEmail}><span>Sent</span></button>
                     </Col>
                     {
                       status.message &&
