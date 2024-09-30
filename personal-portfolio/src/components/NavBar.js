@@ -52,7 +52,7 @@ export const NavBar = () => {
                 <a href="https://livebyuh-my.sharepoint.com/:b:/g/personal/itai1998_go_byuh_edu/EaFkKFFTFAFAkczRMBA0BrIBgCeofDTFsuEDdpjX2WJ9xg?e=LAtJZ8" target="_blank" rel="noopener noreferrer"><img src={navIcon5} alt="" /></a>
               </div>
               <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s Connect</span></button>
+                <button className="vvd"><span>Let's Email</span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>
