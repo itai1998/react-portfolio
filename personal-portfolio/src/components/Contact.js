@@ -47,12 +47,12 @@ export const Contact = () => {
     e.preventDefault();
 
     const myEmail = 'smes93434@gmail.com';
-    const greeding = `Hi, my name is ${formDetails.firstName} ${formDetails.lastName}\n\n`
-    const phone = formDetails.phone !== '' ? `Here is my number: ${formDetails.phone}\n` : ''
-    const email = formDetails.email !== '' ?  `Here is my email: ${formDetails.email}\n` : ''
+    const name = `${formDetails.firstName} ${formDetails.lastName}`
+    const phone = formDetails.phone !== '' ? `\nPhone: ${formDetails.phone}` : ''
+    const email = formDetails.email !== '' ?  `\nEmail: ${formDetails.email}` : ''
      
     // Manually add the line breaks using double encoding
-    const bodyContent = `${greeding}${phone}${email}\n${formDetails.message}`;
+    const bodyContent = `${formDetails.message}\n\n\n${name}${phone}${email}`;
 
     // Construct the Gmail link with body content encoded
     const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${myEmail}&su=It's happy to connect with you&body=${encodeURIComponent(bodyContent)}`;
@@ -76,6 +76,7 @@ export const Contact = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
+                <h3>Feel free to email me at <span className="email-text">smes93434@gmail.com</span> or complete the form below</h3>
                 {/* <form onSubmit={handleSubmit}> */}
                 <form>
                   <Row>
