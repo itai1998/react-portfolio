@@ -23,10 +23,10 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Family Search Project (Intern Project)",
+      title: "Family Search Website (Intern Project)",
       description: "The mission of FamilySearch is to connect people with their ancestors and future generations by preserving family history records. Most of the websites are written by React.JS",
       imgUrl: projImg0,
-      projectUrl:'https://www.youtube.com/watch?v=EmobwEF5yiE&list=PLCOHvB5d5Xvlil1X_I6uIdyS7A-E10kG7&index=1'
+      projectUrl:'https://www.familysearch.org/en/united-states/'
     },
     {
       title: "Alumni Digital Card App (Intern Project)",
@@ -135,10 +135,10 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Project Page 1</Nav.Link>
+                      <Nav.Link eventKey="first">Project 1</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Project Page 2</Nav.Link>
+                      <Nav.Link eventKey="second">Project 2</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="third">Certificate</Nav.Link>
