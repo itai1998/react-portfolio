@@ -49,7 +49,7 @@ export const NavBar = () => {
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/i-tai-lin/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="LinkedIn" /></a>
                 <a href="https://github.com/itai1998" target="_blank" rel="noopener noreferrer"><img src={navIcon4} alt="Github" /></a>
-                <a href="https://livebyuh-my.sharepoint.com/:b:/g/personal/itai1998_go_byuh_edu/EaFkKFFTFAFAkczRMBA0BrIBgCeofDTFsuEDdpjX2WJ9xg?e=LAtJZ8" target="_blank" rel="noopener noreferrer"><img src={navIcon5} alt="" /></a>
+                <a href="https://livebyuh-my.sharepoint.com/personal/itai1998_go_byuh_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fitai1998%5Fgo%5Fbyuh%5Fedu%2FDocuments%2F%E5%B1%A5%E6%AD%B7%2FResume%202024%2D09%2D30%2Epdf&parent=%2Fpersonal%2Fitai1998%5Fgo%5Fbyuh%5Fedu%2FDocuments%2F%E5%B1%A5%E6%AD%B7&ga=1" target="_blank" rel="noopener noreferrer"><img src={navIcon5} alt="" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let's Email</span></button>
