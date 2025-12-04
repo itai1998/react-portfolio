@@ -11,6 +11,7 @@ import projImg8 from "../assets/img/Todo-List.jpg";
 import projImg9 from "../assets/img/Filter-Image.png";
 import projImg10 from "../assets/img/Arm.png";
 import projImg0 from "../assets/img/FamilySearch.png";
+import newWaveLending from "../assets/img/newwave.png";
 import mendixCertificate from "../assets/img/Certificates/Mendix.png";
 import upcCertificate from "../assets/img/Certificates/Upc.png";
 import deanCertificate from "../assets/img/Certificates/Dean.png";
@@ -21,14 +22,21 @@ import "animate.css";
 export const Projects = () => {
   const projects = [
     {
-      title: "Family Search Website (Intern Project)",
+      title: "Family Search Website",
       description:
         "The mission of FamilySearch is to connect people with their ancestors and future generations by preserving family history records. Most of the websites are written by React.JS",
       imgUrl: projImg0,
       projectUrl: "https://www.familysearch.org/en/united-states/",
     },
     {
-      title: "Alumni Digital Card App (Intern Project)",
+      title: "New Wave Lending Group",
+      description:
+        "New Wave Lending is a California mortgage company where my team is responsible for developing the website and broker portal using Next.js and MUI, leveraging modern React-based tooling to create a scalable and user-friendly platform.",
+      imgUrl: newWaveLending,
+      projectUrl: "https://www.newwavelending.com/",
+    },
+    {
+      title: "Alumni Digital Card App",
       description:
         "The Alumni Digital Card App, built with React-Native, allows BYUH Alumni to access their Digital ID Card upon login",
       imgUrl: projImg1,
@@ -99,39 +107,39 @@ export const Projects = () => {
     },
   ];
 
-  const certificates = [
-    {
-      title: "Mendix Rapid Developer",
-      description: "",
-      imgUrl: mendixCertificate,
-      projectUrl:
-        "https://drive.google.com/file/d/1dW5e7oeatRleIKhbdHPWYFwbH_OvkePB/view",
-    },
-    {
-      title: "Upsilon Pi Epsilon",
-      description: "",
-      imgUrl: upcCertificate,
-      projectUrl:
-        "https://drive.google.com/file/d/1yEjTMrXJOujhGClmgspN1_v5lwwbgqG1/view",
-    },
-    {
-      title: "Dean Qualification",
-      description: "",
-      imgUrl: deanCertificate,
-      projectUrl:
-        "https://drive.google.com/file/d/1Ga8beIZ1_4dtcsrkT4RcWewzrA85qgPW/view",
-    },
-    {
-      title: "Leadership Service Certificate",
-      description: "",
-      imgUrl: leadershipCertificate,
-      projectUrl:
-        "https://drive.google.com/file/d/1wi16vgt0uf49EfqMaR_dSKa8YTwNSdKf/view",
-    },
-  ];
+  // const certificates = [
+  //   {
+  //     title: "Mendix Rapid Developer",
+  //     description: "",
+  //     imgUrl: mendixCertificate,
+  //     projectUrl:
+  //       "https://drive.google.com/file/d/1dW5e7oeatRleIKhbdHPWYFwbH_OvkePB/view",
+  //   },
+  //   {
+  //     title: "Upsilon Pi Epsilon",
+  //     description: "",
+  //     imgUrl: upcCertificate,
+  //     projectUrl:
+  //       "https://drive.google.com/file/d/1yEjTMrXJOujhGClmgspN1_v5lwwbgqG1/view",
+  //   },
+  //   {
+  //     title: "Dean Qualification",
+  //     description: "",
+  //     imgUrl: deanCertificate,
+  //     projectUrl:
+  //       "https://drive.google.com/file/d/1Ga8beIZ1_4dtcsrkT4RcWewzrA85qgPW/view",
+  //   },
+  //   {
+  //     title: "Leadership Service Certificate",
+  //     description: "",
+  //     imgUrl: leadershipCertificate,
+  //     projectUrl:
+  //       "https://drive.google.com/file/d/1wi16vgt0uf49EfqMaR_dSKa8YTwNSdKf/view",
+  //   },
+  // ];
 
   const projectsPage1 = projects.slice(0, 6); // Projects for the first page (1-6)
-  const projectsPage2 = projects.slice(6, 11); // Projects for the second page (7-9)
+  const projectsPage2 = projects.slice(6, 12); // Projects for the second page (7-9)
 
   return (
     <section className="project" id="projects">
@@ -147,22 +155,8 @@ export const Projects = () => {
                 Node.js, Python, MySQL, and REST API.{" "}
               </p>
               <p>Below are some projects I develop in my free time </p>
+
               <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                <Nav
-                  variant="pills"
-                  className="nav-pills mb-5 justify-content-center align-items-center"
-                  id="pills-tab"
-                >
-                  <Nav.Item>
-                    <Nav.Link eventKey="first">Project 1</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link eventKey="second">Project 2</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link eventKey="third">Certificate</Nav.Link>
-                  </Nav.Item>
-                </Nav>
                 <Tab.Content id="slideInUp">
                   <Tab.Pane eventKey="first">
                     <Row>
@@ -178,13 +172,28 @@ export const Projects = () => {
                       })}
                     </Row>
                   </Tab.Pane>
-                  <Tab.Pane eventKey="third">
+                  {/* <Tab.Pane eventKey="third">
                     <Row>
                       {certificates.map((certificate, index) => {
                         return <ProjectCard key={index} {...certificate} />;
                       })}
                     </Row>
-                  </Tab.Pane>
+                  </Tab.Pane> */}
+                  <Nav
+                    variant="pills"
+                    className="nav-pills mb-5 justify-content-center align-items-center"
+                    id="pills-tab"
+                  >
+                    <Nav.Item>
+                      <Nav.Link eventKey="first">1</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link eventKey="second">2</Nav.Link>
+                    </Nav.Item>
+                    {/* <Nav.Item>
+                    <Nav.Link eventKey="third">3</Nav.Link>
+                  </Nav.Item> */}
+                  </Nav>
                 </Tab.Content>
               </Tab.Container>
             </div>

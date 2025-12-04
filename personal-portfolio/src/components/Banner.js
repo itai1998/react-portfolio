@@ -68,13 +68,11 @@ export const Banner = () => {
                 </span>
               </h1>
               <p>
-                Hi, I'm I-Tai Lin, a passionate Software Developer at Brigham
-                Young University-Hawaii's Enterprise Information Systems (EIS)
-                department, Web Developer at FamilySearch, and Mobile Developer
-                for Alminu Relationship. With expertise in React, Java, and
-                Node.js, I create dynamic applications that enhance user
-                experiences and drive functionality across diverse platforms,
-                from academic systems to family history research tools.
+                Hi, I’m I-Tai Lin, a Software Engineer passionate about building
+                intuitive, reliable, and scalable applications. My expertise
+                spans React, TypeScript, and Java, with experience delivering
+                full-stack solutions across academic systems, family history
+                research platforms, and mortgage industry technology.
               </p>
               <button
                 onClick={() =>
